@@ -19,7 +19,7 @@ AUTH_TYPE = 'OAuth2'
 
 CLIENT_ID = 'Q04jb9uEi7zIAA0kmSnUnhNKH6CyMa2YT5RNY1svI4es3Cnfwf'
 CLIENT_SECRET = 'Lm1NSuNsA4jANoGOke4HxVip5IBmMDgmoz70J7pp'
-REDIRECT_URI = 'http://gfhdev.local:8000/callback'
+REDIRECT_URI = 'http://gfhdev.local:5000/callback'
 
 # OAuth1
 CONSUMER_KEY = 'EnterConsumerKeyHere'

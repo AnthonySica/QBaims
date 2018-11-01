@@ -24,9 +24,9 @@
     </script>
     <ipp:connectToIntuit></ipp:connectToIntuit> -->
     {% if session['is_authorized'] == True %}
-        <button type="submit" onClick="location.href = 'http://gfhdev.local:8000/reset-session';" >Reset Session</button>
-        <button type="submit" onClick="location.href = 'http://gfhdev.local:8000/company-info';" >Get Company Info</button>
-        <button type="submit" onClick="location.href = 'http://gfhdev.local:8000//mainpage';" >Main Session</button>
+        <button type="submit" onClick="location.href = 'http://gfhdev.local:5000/reset-session';" >Reset Session</button>
+        <button type="submit" onClick="location.href = 'http://gfhdev.local:5000/company-info';" >Get Company Info</button>
+        <button type="submit" onClick="location.href = 'http://gfhdev.local:5000/mainpage';" >Main Session</button>
         {% if company_info %}
             <p>{{ company_info }}</p>
         {% endif %}
@@ -68,7 +68,7 @@
 
     <h4>Hi, welcome to Intuit Developer's Python Flask app. This app adds customer from Excel file to QBO and also shows how to get CompanyInfo of the connected QBO account. This app can be used with both OAuth1 and OAuth2. Don't forget to add your app's token in config file.</h4>
 
-    <a href="{{ url_for('auth') }}"><img id="my-img" src="{{ url_for('static', filename='C2QB_green_btn_lg_default.png') }}" onmouseover="hover(this);" onmouseout="unhover(this);" width=170 height=50/></a>
+    <a href="{{ url_for('auth') }}"><img id="my-img" src="{{ url_for('static', filename='C2QB_green_btn_lg_default.png') }}" onmouseover="hover(this);" onmouseout="unhover(this);" width=170 height=34/></a>
 
     {% endif %}
 
